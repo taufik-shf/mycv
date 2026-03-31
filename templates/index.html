@@ -120,6 +120,21 @@
     </section>
 
     <section class="section">
+      <h2>Talks &amp; Workshops</h2>
+      {% for talk in speaking %}
+      <div class="entry">
+        <div class="entry-header">
+          <div>
+            <h3>{{ talk.title }}</h3>
+            <p class="org">{{ talk.org }}</p>
+          </div>
+          <span class="date">{{ talk.dates }}</span>
+        </div>
+      </div>
+      {% endfor %}
+    </section>
+
+    <section class="section">
       <h2>Skills</h2>
       <div class="skills-grid">
         {% for skill in skills %}
@@ -149,21 +164,6 @@
       <div class="entry">
         <h3 class="pub-title">{{ pub.title }}</h3>
         <p class="entry-desc">{{ pub.description }}</p>
-      </div>
-      {% endfor %}
-    </section>
-
-    <section class="section">
-      <h2>Talks &amp; Workshops</h2>
-      {% for talk in speaking %}
-      <div class="entry">
-        <div class="entry-header">
-          <div>
-            <h3>{{ talk.title }}</h3>
-            <p class="org">{{ talk.org }}</p>
-          </div>
-          <span class="date">{{ talk.dates }}</span>
-        </div>
       </div>
       {% endfor %}
     </section>

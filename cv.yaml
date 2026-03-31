@@ -1,12 +1,13 @@
 name: Muhammad Taufik
-title: Surveyor Ahli Pertama
+title: Geospatial Infrastructure Engineer
 photo: assets/profile.jpg
 summary: >
-  Surveyor and Cloud Engineer eager to advance in Geospatial Data Science
-  by leveraging Earth Observation Data through Cloud Native Systems and
-  Infrastructure. Experienced in managing cloud environments with IaC
-  (Terraform, AWS, Kubernetes) and CI/CD pipelines, combining geospatial
-  expertise with modern DevOps practices.
+  Builds national-scale cloud-native geospatial infrastructure for government
+  and international development programs. Combines deep geospatial domain
+  expertise with modern DevOps practices to deliver production Earth Observation
+  pipelines. Proven track record architecting cloud infrastructure (AWS, Terraform,
+  Kubernetes), training government institutions, and enabling data-driven policy
+  through One Map Policy implementation.
 
 contact:
   location: Bogor, West Java, Indonesia
@@ -27,33 +28,32 @@ links:
     url: https://www.instagram.com/taufik.shafik/
 
 experience:
+  - title: Mapping Surveyor First Expert
+    org: Badan Informasi Geospasial (Bogor, Indonesia)
+    dates: Mar 2019 &mdash; Present
+    description: >
+      Surveyor at Indonesia's national geospatial agency, leading cloud
+      infrastructure development and national geospatial data initiatives.
+      Serves as technical advisor for government institutions and national
+      policy programs.
+    highlights:
+      - Designed and deployed national-scale cloud infrastructure for Digital Earth Indonesia (Terraform, AWS, Kubernetes)
+      - Implemented production GeoMAD pipeline and coastal change monitoring with satellite time-series
+      - Trained multiple government institutions on cloud-native geospatial workflows, Git, and Docker
+      - Enabled data-driven policy through flood hazard maps (BNPB) and One Map Policy standardization
+      - Managed Python analysis team for national-scale Earth Observation-derived analysis
+
   - title: Freelance Cloud Engineer
     org: Digital Earth Pacific / Auspatious (Remote)
     dates: Nov 2025 &mdash; Present
     description: >
-      Contracted by Auspatious, an Australian cloud consulting company,
-      to manage Cloud Infrastructure for the Digital Earth Pacific project
-      using IaC Terraform in AWS, Kubernetes orchestration, and CI/CD
-      pipeline development.
+      Contracted by Auspatious to design and manage cloud infrastructure for the
+      Digital Earth Pacific program, extending national geospatial infrastructure
+      expertise to regional development across the Pacific.
     highlights:
       - Managing Cloud Infrastructure with IaC Terraform in AWS
       - Kubernetes orchestration and deployment
       - CI/CD pipeline development and maintenance
-
-  - title: Surveyor Ahli Pertama
-    org: Badan Informasi Geospasial (Bogor, Indonesia)
-    dates: Mar 2019 &mdash; Present
-    description: >
-      Mapping Surveyor at Indonesia's national geospatial agency. This
-      role builds on marine sciences expertise, applying GIS and
-      oceanographic knowledge to real-world mapping and conservation efforts.
-    highlights:
-      - Conduct field and remote sensing-based mapping of benthic habitats and land cover on Indonesia's outermost islands
-      - Produce flood hazard maps for national disaster risk documents (BNPB)
-      - Support One Map Policy implementation through geospatial data standardization and SOP development
-      - Deliver GIS training and technical consulting to government institutions
-      - Contribute to Digital Earth Indonesia initiative with cloud-native geospatial workflows (Python, DevOps, Argo Workflows on Kubernetes)
-      - Deploy GeoMAD as national-scale production pipeline; develop coastal change monitoring with satellite time-series
 
   - title: Scientific Diver / Researcher
     org: IPB University (Bogor, West Java, Indonesia)
@@ -84,15 +84,15 @@ projects:
       - Geospatial
 
   - title: Digital Earth Indonesia
-    org: Team Leader / Cloud Engineer / DevOps Engineer @ Auspatious
+    org: Team Leader / Cloud Engineer / DevOps Engineer @ BIG
     dates: Jan 2024 &mdash; Present
-    description: National geospatial data platform (Australian Government supported).
+    description: National geospatial data platform supporting Indonesian government spatial policy (Australian Government supported).
     highlights:
-      - Implement full cloud IAC + Kubernetes + GitOps + CI/CD
-      - Create landing page and documentation
-      - Develop national Earth Observation derived analysis in cloud with Argo Workflows
-      - Serve as team leader for Python-based analysis in self-hosted Jupyter notebook sandbox
-      - Build operational cloud-native geospatial workflows
+      - Led full cloud IAC + Kubernetes + GitOps + CI/CD infrastructure implementation
+      - Built operational cloud-native geospatial workflows for national-scale Earth Observation
+      - Developed national EO-derived analysis pipelines using Argo Workflows
+      - Managed Python analysis team in self-hosted Jupyter environment
+      - Created technical documentation and landing pages for government stakeholders
     tags:
       - Terraform
       - AWS
@@ -103,19 +103,45 @@ projects:
       - Jupyter
       - Python
 
+speaking:
+  - title: Geospatial Dissemination for Members of the House of Representatives of Indonesia
+    org: South Kalimantan Province
+    dates: 2024
+  - title: Containerization with Docker for Geospatial Information Production
+    org: Geospatial Information Agency
+    dates: 2025
+  - title: Collaborative Workflows with Git
+    org: Geospatial Information Agency
+    dates: 2025
+  - title: UAV Applications for Coastal Mapping and Management
+    org: Ministry of Marine Affairs and Fisheries
+    dates: 2023
+  - title: Zoning and Spatial Mapping of Fisheries Port Operational Areas
+    org: Ministry of Marine Affairs and Fisheries
+    dates: 2022
+  - title: Fundamentals of Geographic Information Systems
+    org: Ministry of Marine Affairs and Fisheries
+    dates: 2021
+  - title: Zoning and Spatial Planning of Aquatic Conservation Areas
+    org: Ministry of Marine Affairs and Fisheries
+    dates: 2021
+  - title: Zoning and Spatial Planning of Aquatic Conservation Areas
+    org: Ministry of Marine Affairs and Fisheries
+    dates: 2020
+
 skills:
   - category: Cloud & DevOps
     items: Terraform, AWS, Kubernetes, Docker, CI/CD
-  - category: Programming
-    items: Python, React, JavaScript, HTML, CSS
   - category: Geospatial Data Science
     items: GIS, Earth Observation, Remote Sensing, Surveying, Benthic Habitat Mapping, Oceanography
-  - category: Marine Science
-    items: Scientific Diving, Underwater Surveys, Cetacean Monitoring, Coral Reef Assessment
+  - category: Government & Public Sector
+    items: Public Policy Implementation, Technical Advisory, Project Management, Institutional Training, One Map Policy
+  - category: Programming
+    items: Python, React, JavaScript, HTML, CSS
   - category: AI & Emerging Tech
     items: Agentic AI, Orchestration, Cloud Native Systems
-  - category: Government & Public Sector
-    items: Procurement, Public Policy Decision Making, Project Management
+  - category: Marine Science
+    items: Scientific Diving, Underwater Surveys, Cetacean Monitoring, Coral Reef Assessment
 
 certifications:
   - name: AWS Certified Cloud Practitioner
@@ -141,32 +167,6 @@ publications:
       National Park During Indian Ocean Dipole Event
     description: >
       Study on coral reef ecosystem vulnerability and climate variability impacts.
-
-speaking:
-  - title: Zoning and Spatial Planning of Aquatic Conservation Areas
-    org: Ministry of Marine Affairs and Fisheries
-    dates: 2020
-  - title: Zoning and Spatial Planning of Aquatic Conservation Areas
-    org: Ministry of Marine Affairs and Fisheries
-    dates: 2021
-  - title: Fundamentals of Geographic Information Systems
-    org: Ministry of Marine Affairs and Fisheries
-    dates: 2021
-  - title: Zoning and Spatial Mapping of Fisheries Port Operational Areas
-    org: Ministry of Marine Affairs and Fisheries
-    dates: 2022
-  - title: UAV Applications for Coastal Mapping and Management
-    org: Ministry of Marine Affairs and Fisheries
-    dates: 2023
-  - title: Geospatial Dissemination for Members of the House of Representatives of Indonesia
-    org: South Kalimantan Province
-    dates: 2024
-  - title: Collaborative Workflows with Git
-    org: Geospatial Information Agency
-    dates: 2025
-  - title: Containerization with Docker for Geospatial Information Production
-    org: Geospatial Information Agency
-    dates: 2025
 
 languages:
   - name: Indonesian
