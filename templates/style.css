@@ -83,12 +83,17 @@ body {
 }
 
 .contact-info {
-  margin-top: 10px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3px 20px;
+  margin-top: 12px;
+  display: flex;
+  gap: 32px;
   font-size: 8.5pt;
   color: var(--color-text-light);
+}
+
+.contact-col {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
 
 .contact-item {
@@ -327,7 +332,8 @@ a.contact-item:hover .icon {
   }
 
   .contact-info {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+    gap: 8px;
   }
 
   .skills-grid,
@@ -371,7 +377,6 @@ a.contact-item:hover .icon {
   }
 
   .contact-info {
-    grid-template-columns: 1fr;
     text-align: left;
   }
 

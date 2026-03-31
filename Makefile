@@ -8,10 +8,10 @@ build:
 pdf: build
 	$(UV) weasyprint index.html cv.pdf
 
-serve:
+serve: build
 	python3 -m http.server 8080
 
-wserve:
+wserve: build
 	@echo "Open in Windows browser: http://$$(hostname -I | awk '{print $$1}'):8080"
 	python3 -m http.server 8080 --bind 0.0.0.0
 
