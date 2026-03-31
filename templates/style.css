@@ -147,6 +147,11 @@ a.contact-item:hover .icon {
   gap: 12px;
 }
 
+.entry-header > div:first-child {
+  flex: 1;
+  min-width: 0;
+}
+
 .entry-header h3 {
   font-size: 10pt;
   font-weight: 600;
@@ -308,6 +313,102 @@ a.contact-item:hover .icon {
     background: var(--color-accent);
     color: white;
     transition: all 0.15s ease;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .page {
+    margin: 16px auto;
+    padding: 32px 28px;
+  }
+
+  .header-content {
+    gap: 16px;
+  }
+
+  .contact-info {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-grid,
+  .interests-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .entry-header .date {
+    font-size: 7.5pt;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .page {
+    margin: 0;
+    padding: 24px 18px;
+    box-shadow: none;
+  }
+
+  .header-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-photo {
+    width: 72px;
+    height: 72px;
+  }
+
+  .header-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .header-text h1 {
+    font-size: 18pt;
+  }
+
+  .summary {
+    text-align: left;
+  }
+
+  .contact-info {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+
+  .entry-header {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .entry-header .date {
+    align-self: flex-start;
+  }
+
+  .languages {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .tags {
+    justify-content: center;
+  }
+
+  .skills-grid,
+  .interests-grid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .cert-item {
+    flex-wrap: wrap;
+  }
+
+  body {
+    font-size: 9.5pt;
+  }
+
+  .summary {
+    font-size: 9pt;
   }
 }
 
