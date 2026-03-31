@@ -12,16 +12,16 @@ A YAML-driven CV builder. Content lives in `cv.yaml`, is rendered via a Jinja2 t
 mycv/
 ├── cv.yaml              # All CV content (data source of truth)
 ├── templates/
-│   └── index.html       # Jinja2 HTML template
+│   ├── index.html       # Jinja2 HTML template
+│   └── style.css        # Styles + @media print + @page rules (inlined into HTML via Jinja2 include)
 ├── build.py             # Renders cv.yaml + template → index.html
-├── style.css            # Styles + @media print + @page rules
 ├── assets/
 │   └── profile.jpg      # Profile photo
 ├── Makefile             # Build commands
 ├── pyproject.toml       # uv project config with dependencies
 ├── uv.lock              # uv lockfile
 ├── .venv/               # Python venv (gitignored)
-├── index.html           # Generated HTML output (gitignored)
+├── index.html           # Generated HTML output (gitignored, self-contained)
 ├── cv.pdf               # Generated PDF output (gitignored)
 └── AGENTS.md            # This file
 ```
@@ -52,7 +52,7 @@ Edit `templates/index.html` (Jinja2 syntax). Use `{{ variable }}` and `{% for it
 
 ## Editing Styles
 
-Edit `style.css`. Screen and print styles are in the same file. The `@page` block at the top controls PDF page size and margins. The `@media print` block at the bottom handles print-specific overrides.
+Edit `templates/style.css`. The CSS is inlined into the HTML output via `{% include 'style.css' %}` in the template. Screen and print styles are in the same file. The `@page` block at the top controls PDF page size and margins. The `@media screen` block handles web view styling. The `@media print` block handles print-specific overrides. The generated `index.html` is fully self-contained (no external CSS file).
 
 ## Style Guidelines
 

@@ -10,15 +10,20 @@ summary: >
 
 contact:
   location: Bogor, West Java, Indonesia
-  email: taufik.shf@gmail.com
+  email:
+    - taufik.shf@gmail.com
+    - muhammad.taufik@big.go.id
   phone: "+62 82198083022"
 
 links:
   - label: GitHub
+    username: taufik-shf
     url: https://github.com/taufik-shf
   - label: LinkedIn
-    url: https://www.linkedin.com/in/muhammad-taufik-b2b931218/
+    username: taufik-shf
+    url: https://www.linkedin.com/in/taufik-shf/
   - label: Instagram
+    username: "@taufik.shafik"
     url: https://www.instagram.com/taufik.shafik/
 
 experience:
@@ -62,7 +67,7 @@ experience:
 education:
   - degree: Bachelor of Science &mdash; Marine Sciences and Technologies
     institution: Institut Pertanian Bogor (IPB University)
-    dates: Sep 2012 &mdash; Oct 2017
+    dates: 2012 &mdash; 2017
 
 projects:
   - title: Digital Earth Pacific
@@ -109,6 +114,8 @@ skills:
     items: Scientific Diving, Underwater Surveys, Cetacean Monitoring, Coral Reef Assessment
   - category: AI & Emerging Tech
     items: Agentic AI, Orchestration, Cloud Native Systems
+  - category: Government & Public Sector
+    items: Procurement, Public Policy Decision Making, Project Management
 
 certifications:
   - name: AWS Certified Cloud Practitioner
@@ -127,7 +134,8 @@ publications:
       Development of observing dolphin population method using Small
       Vertical Take-off and Landing (VTOL) Unmanned Aerial System (UAV)
     description: >
-      Novel methodology for marine mammal population assessment using drone technology.
+      Drone-based observation of dolphin pods using small VTOL UAV
+      for population assessment in Indonesian waters.
   - title: >
       Ecological Vulnerability of Coral Reef Ecosystem in Wakatobi
       National Park During Indian Ocean Dipole Event

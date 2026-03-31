@@ -4,14 +4,16 @@
 }
 
 :root {
-  --color-primary: #1a1a2e;
-  --color-accent: #0f62fe;
-  --color-text: #2c2c2c;
-  --color-text-light: #555;
-  --color-bg: #ffffff;
-  --color-border: #e0e0e0;
-  --color-tag-bg: #eef2ff;
-  --color-tag-text: #0f62fe;
+  --color-primary: #0f172a;
+  --color-accent: #2563eb;
+  --color-accent-light: #3b82f6;
+  --color-text: #1e293b;
+  --color-text-light: #64748b;
+  --color-bg: #f1f5f9;
+  --color-surface: #ffffff;
+  --color-border: #e2e8f0;
+  --color-tag-bg: #eff6ff;
+  --color-tag-text: #1d4ed8;
   --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --font-mono: "JetBrains Mono", "Fira Code", monospace;
 }
@@ -25,36 +27,45 @@
 body {
   font-family: var(--font-body);
   font-size: 10pt;
-  line-height: 1.5;
+  line-height: 1.6;
   color: var(--color-text);
   background: var(--color-bg);
 }
 
+.page {
+  max-width: 210mm;
+  margin: 0 auto;
+  background: var(--color-surface);
+  padding: 40px 48px;
+  min-height: 100vh;
+}
+
 .header {
-  border-bottom: 2px solid var(--color-primary);
-  padding-bottom: 14px;
-  margin-bottom: 16px;
+  padding-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .header-content {
   display: flex;
-  gap: 20px;
+  gap: 24px;
   align-items: flex-start;
 }
 
 .profile-photo {
-  width: 72px;
-  height: 72px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
   object-fit: cover;
   flex-shrink: 0;
+  border: 3px solid var(--color-border);
 }
 
 .header-text h1 {
-  font-size: 20pt;
-  font-weight: 700;
+  font-size: 22pt;
+  font-weight: 800;
   color: var(--color-primary);
-  line-height: 1.1;
+  line-height: 1.15;
+  letter-spacing: -0.5px;
 }
 
 .title {
@@ -65,62 +76,67 @@ body {
 }
 
 .summary {
-  margin-top: 8px;
+  margin-top: 10px;
   color: var(--color-text-light);
   font-size: 9.5pt;
-  line-height: 1.55;
+  line-height: 1.6;
 }
 
 .contact-info {
-  margin-top: 8px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px;
-  align-items: center;
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3px 20px;
   font-size: 8.5pt;
   color: var(--color-text-light);
 }
 
-.contact-separator {
-  color: var(--color-border);
+.contact-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--color-text-light);
+  text-decoration: none;
+  transition: color 0.15s ease;
 }
 
-.contact-item a,
 a.contact-item {
-  color: var(--color-accent);
-  text-decoration: none;
+  color: var(--color-text-light);
 }
 
-.links {
-  margin-top: 4px;
-  display: flex;
-  gap: 12px;
-  font-size: 8.5pt;
+a.contact-item:hover {
+  color: var(--color-accent);
 }
 
-.link-item {
+.icon {
+  width: 13px;
+  height: 13px;
+  flex-shrink: 0;
+  color: var(--color-text-light);
+  vertical-align: middle;
+}
+
+a.contact-item:hover .icon {
   color: var(--color-accent);
-  text-decoration: none;
-  font-weight: 500;
 }
 
 .section {
-  margin-bottom: 14px;
+  margin-bottom: 18px;
 }
 
 .section h2 {
-  font-size: 11pt;
+  font-size: 10.5pt;
   font-weight: 700;
   color: var(--color-primary);
   text-transform: uppercase;
-  letter-spacing: 0.5px;
-  border-bottom: 1px solid var(--color-border);
-  padding-bottom: 3px;
-  margin-bottom: 10px;
+  letter-spacing: 0.8px;
+  border-bottom: 1.5px solid var(--color-border);
+  padding-bottom: 4px;
+  margin-bottom: 12px;
 }
 
 .entry {
-  margin-bottom: 12px;
+  margin-bottom: 14px;
   break-inside: avoid;
 }
 
@@ -141,56 +157,72 @@ a.contact-item {
   font-size: 9pt;
   color: var(--color-text-light);
   font-style: italic;
+  margin-top: 1px;
+}
+
+.pub-title {
+  font-size: 9pt;
+  font-weight: 600;
+  color: var(--color-primary);
 }
 
 .entry-header .date {
-  font-size: 8.5pt;
-  color: var(--color-text-light);
+  font-size: 8pt;
   white-space: nowrap;
   flex-shrink: 0;
-  padding-top: 2px;
+  padding: 2px 10px;
+  border-radius: 12px;
+  font-weight: 500;
+  background: var(--color-tag-bg);
+  color: var(--color-tag-text);
 }
 
 .entry-desc {
   font-size: 9pt;
   color: var(--color-text-light);
-  margin-top: 3px;
-  line-height: 1.5;
+  margin-top: 4px;
+  line-height: 1.55;
 }
 
 .entry ul {
-  margin-top: 4px;
-  padding-left: 16px;
+  margin-top: 6px;
+  padding-left: 18px;
   font-size: 9pt;
 }
 
 .entry ul li {
-  margin-bottom: 1px;
-  line-height: 1.45;
+  margin-bottom: 2px;
+  line-height: 1.5;
+  color: var(--color-text);
+}
+
+.entry ul li::marker {
+  color: var(--color-accent);
 }
 
 .tags {
-  margin-top: 6px;
+  margin-top: 8px;
   display: flex;
   flex-wrap: wrap;
-  gap: 4px;
+  gap: 5px;
 }
 
 .tag {
   display: inline-block;
   font-size: 7.5pt;
-  font-weight: 500;
-  padding: 1px 8px;
-  border-radius: 3px;
+  font-weight: 600;
+  padding: 2px 10px;
+  border-radius: 12px;
   background: var(--color-tag-bg);
   color: var(--color-tag-text);
+  letter-spacing: 0.2px;
 }
 
 .skills-grid,
 .interests-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 8px 20px;
+  gap: 10px 24px;
 }
 
 .skill-group h3,
@@ -205,12 +237,13 @@ a.contact-item {
 .interest-group p {
   font-size: 8.5pt;
   color: var(--color-text-light);
+  line-height: 1.5;
 }
 
 .cert-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 6px 20px;
+  grid-template-columns: 1fr;
+  gap: 6px 24px;
 }
 
 .cert-item {
@@ -238,7 +271,7 @@ a.contact-item {
 
 .languages {
   display: flex;
-  gap: 24px;
+  gap: 28px;
 }
 
 .lang-item {
@@ -256,9 +289,40 @@ a.contact-item {
   color: var(--color-text-light);
 }
 
+@media screen {
+  body {
+    background: var(--color-bg);
+  }
+
+  .page {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 8px 30px rgba(0, 0, 0, 0.04);
+    margin: 32px auto;
+    padding: 48px 56px;
+  }
+
+  .profile-photo {
+    border-color: var(--color-accent);
+  }
+
+  .tag:hover {
+    background: var(--color-accent);
+    color: white;
+    transition: all 0.15s ease;
+  }
+}
+
 @media print {
   body {
+    background: white;
     font-size: 9.5pt;
+  }
+
+  .page {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    min-height: auto;
   }
 
   .section {
@@ -272,5 +336,19 @@ a.contact-item {
   a {
     color: var(--color-text);
     text-decoration: none;
+  }
+
+  .icon {
+    color: var(--color-text-light);
+  }
+
+  .entry-header .date {
+    background: none;
+    color: var(--color-text-light);
+    padding: 2px 0;
+  }
+
+  .profile-photo {
+    border: none;
   }
 }
