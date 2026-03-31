@@ -1,0 +1,149 @@
+name: Muhammad Taufik
+title: Surveyor Ahli Pertama
+photo: assets/profile.jpg
+summary: >
+  Surveyor and Cloud Engineer eager to advance in Geospatial Data Science
+  by leveraging Earth Observation Data through Cloud Native Systems and
+  Infrastructure. Experienced in managing cloud environments with IaC
+  (Terraform, AWS, Kubernetes) and CI/CD pipelines, combining geospatial
+  expertise with modern DevOps practices.
+
+contact:
+  location: Bogor, West Java, Indonesia
+  email: taufik.shf@gmail.com
+  phone: "+62 82198083022"
+
+links:
+  - label: GitHub
+    url: https://github.com/taufik-shf
+  - label: LinkedIn
+    url: https://www.linkedin.com/in/muhammad-taufik-b2b931218/
+  - label: Instagram
+    url: https://www.instagram.com/taufik.shafik/
+
+experience:
+  - title: Freelance Cloud Engineer
+    org: Digital Earth Pacific / Auspatious (Remote)
+    dates: Nov 2025 &mdash; Present
+    description: >
+      Contracted by Auspatious, an Australian cloud consulting company,
+      to manage Cloud Infrastructure for the Digital Earth Pacific project
+      using IaC Terraform in AWS, Kubernetes orchestration, and CI/CD
+      pipeline development.
+    highlights:
+      - Managing Cloud Infrastructure with IaC Terraform in AWS
+      - Kubernetes orchestration and deployment
+      - CI/CD pipeline development and maintenance
+
+  - title: Surveyor Ahli Pertama
+    org: Badan Informasi Geospasial (Bogor, Indonesia)
+    dates: Mar 2019 &mdash; Present
+    description: >
+      Mapping Surveyor at Indonesia's national geospatial agency. This
+      role builds on marine sciences expertise, applying GIS and
+      oceanographic knowledge to real-world mapping and conservation efforts.
+    highlights:
+      - Conduct field and remote sensing-based mapping of benthic habitats and land cover on Indonesia's outermost islands
+      - Produce flood hazard maps for national disaster risk documents (BNPB)
+      - Support One Map Policy implementation through geospatial data standardization and SOP development
+      - Deliver GIS training and technical consulting to government institutions
+      - Contribute to Digital Earth Indonesia initiative with cloud-native geospatial workflows (Python, DevOps, Argo Workflows on Kubernetes)
+      - Deploy GeoMAD as national-scale production pipeline; develop coastal change monitoring with satellite time-series
+
+  - title: Scientific Diver / Researcher
+    org: IPB University (Bogor, West Java, Indonesia)
+    dates: Apr 2017 &mdash; Jul 2018
+    description: Conducted underwater surveys and data collection for marine research projects.
+    highlights:
+      - Conducted underwater surveys focusing on benthic habitats
+      - Cetacean monitoring and ecosystem assessments in Indonesian waters
+      - Data collection for marine research projects
+
+education:
+  - degree: Bachelor of Science &mdash; Marine Sciences and Technologies
+    institution: Institut Pertanian Bogor (IPB University)
+    dates: Sep 2012 &mdash; Oct 2017
+
+projects:
+  - title: Digital Earth Pacific
+    org: Cloud Engineer @ Auspatious
+    dates: Nov 2025 &mdash; Present
+    description: Cloud-based geospatial platform for Pacific region.
+    highlights:
+      - Cloud infrastructure management with Terraform and AWS
+      - Kubernetes-based deployment
+    tags:
+      - Terraform
+      - AWS
+      - Kubernetes
+      - Geospatial
+
+  - title: Digital Earth Indonesia
+    org: Team Leader / Cloud Engineer / DevOps Engineer @ Auspatious
+    dates: Jan 2024 &mdash; Present
+    description: National geospatial data platform (Australian Government supported).
+    highlights:
+      - Implement full cloud IAC + Kubernetes + GitOps + CI/CD
+      - Create landing page and documentation
+      - Develop national Earth Observation derived analysis in cloud with Argo Workflows
+      - Serve as team leader for Python-based analysis in self-hosted Jupyter notebook sandbox
+      - Build operational cloud-native geospatial workflows
+    tags:
+      - Terraform
+      - AWS
+      - Kubernetes
+      - GitOps
+      - CI/CD
+      - Argo Workflows
+      - Jupyter
+      - Python
+
+skills:
+  - category: Cloud & DevOps
+    items: Terraform, AWS, Kubernetes, Docker, CI/CD
+  - category: Programming
+    items: Python, React, JavaScript, HTML, CSS
+  - category: Geospatial Data Science
+    items: GIS, Earth Observation, Remote Sensing, Surveying, Benthic Habitat Mapping, Oceanography
+  - category: Marine Science
+    items: Scientific Diving, Underwater Surveys, Cetacean Monitoring, Coral Reef Assessment
+  - category: AI & Emerging Tech
+    items: Agentic AI, Orchestration, Cloud Native Systems
+
+certifications:
+  - name: AWS Certified Cloud Practitioner
+    issuer: Amazon Web Services
+  - name: Remote Pilot Certificate
+    issuer: Civil Aviation Authority
+  - name: Advanced Open Water Diver
+    issuer: PADI
+  - name: Enriched Air Diver
+    issuer: PADI
+  - name: Government Procurement
+    issuer: Government of Indonesia
+
+publications:
+  - title: >
+      Development of observing dolphin population method using Small
+      Vertical Take-off and Landing (VTOL) Unmanned Aerial System (UAV)
+    description: >
+      Novel methodology for marine mammal population assessment using drone technology.
+  - title: >
+      Ecological Vulnerability of Coral Reef Ecosystem in Wakatobi
+      National Park During Indian Ocean Dipole Event
+    description: >
+      Study on coral reef ecosystem vulnerability and climate variability impacts.
+
+languages:
+  - name: Indonesian
+    level: Native speaker
+  - name: English
+    level: Professional working proficiency
+
+interests:
+  - category: Technology & AI
+    items: Cloud Computing, Artificial Intelligence, DevOps
+  - category: Geospatial & Mapping
+    items: GIS, Digital Earth, Remote Sensing
+  - category: Marine Science & Conservation
+    items: Coral Reef Conservation, Marine Biology, Underwater Photography, Scuba Diving
