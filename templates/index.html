@@ -150,6 +150,21 @@
     </section>
 
     <section class="section">
+      <h2>Talks &amp; Workshops</h2>
+      {% for talk in speaking %}
+      <div class="entry">
+        <div class="entry-header">
+          <div>
+            <h3>{{ talk.title }}</h3>
+            <p class="org">{{ talk.org }}</p>
+          </div>
+          <span class="date">{{ talk.dates }}</span>
+        </div>
+      </div>
+      {% endfor %}
+    </section>
+
+    <section class="section">
       <h2>Languages</h2>
       <div class="languages">
         {% for lang in languages %}
